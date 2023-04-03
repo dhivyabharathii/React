@@ -1,0 +1,52 @@
+
+body{
+    background-image: url("5605216.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+     
+
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 32px;
+  }
+  
+  th {
+    background-color:transparent;
+  }
+  
+  td {
+    background-color: transparent;
+  }
+  
+  form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  form * {
+    font-size: 28px;
+  }

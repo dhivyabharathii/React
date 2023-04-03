@@ -5,7 +5,7 @@ export default function Login(){
     const [NameInput, setNameInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
 
-    const history = useHistory();
+    const navigate= useHistory();
 
 const handleNameChange = (e) => {
     setNameInput(e.target.value);
@@ -15,10 +15,14 @@ const handlePasswordChange = (e) => {
     setPasswordInput(e.target.value);
 }
 
-const a=() => {
-    if(NameInput=="Dhi" && passwordInput=="1234"){
+const handleLoginSubmit = (e) => {
+    e.preventDefault();
+    let hardcodedCred = 
+        {name:'Dhi',
+        password: '1234'}
+    if(NameInput===hardcodedCred.name && passwordInput===hardcodedCred.password){
        alert("Login Successful");
-       history.push('/hii')
+       navigate.push('/table')
         
     }
     else{
@@ -54,7 +58,7 @@ const a=() => {
         </div>
 
         <div class="input-field">
-            <input type="submit" class="submit" value="Login" onclick={a} />
+            <input type="submit" class="submit" value="Login" onClick={handleLoginSubmit} />
         </div>
 
         <div class="two-col">

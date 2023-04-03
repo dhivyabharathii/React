@@ -1,0 +1,22 @@
+
+[
+    {
+      "id": 1,
+      "fullName": "Dhivya",
+      "address": "road"
+    },
+    {
+      "id": 2,
+      "fullName": "varshini",
+      "address": "town"
+    },
+    {
+      "id": 3,
+      "fullName": "sri",
+      "address": "street"    },
+    {
+      "id": 4,
+      "fullName": "abi",
+      "address": "city"    }
+    
+]
